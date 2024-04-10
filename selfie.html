@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title><center> Self Portrait </center></title>
+<h1><center> p5js Portrait </h1></center>
+<br>
+<center><iframe src="finalself_portrait/index.html" height="600" width="600" title="p5js Selfie"></iframe></center>
+
+<h1><center> Look at my code here!</center></h1>
+<pre><center> function setup() {
+createCanvas(600,600);
+background(255);
+line(0,0, width, height); 
+}
+
+
+function draw() {
+  background(5); //grayscale bg
+  
+  // syntax: (x, y, s) 
+  // s is size of the square
+  
+  fill(199, 199, 199); //skin color
+  square(40, 25, 500); //face
+  
+   fill(255, 255, 255); //eyes
+  square(40, 130, 150);
+    square(300, 130, 150); 
+
+       fill(61, 61, 61); //pupils
+         square(40, 130, 100);
+                  square(300, 130, 100);
+                  
+       fill(700) //highlights
+       square(40, 130, 20);
+       square(300, 130, 20);
+                  
+       fill(61, 61, 61); //hair
+       rect(40, 25, 500, 50) 
+       rect(480, 75, 60, 50)
+       
+       // x, y, s
+fill(61, 61, 61) //smile
+  square(100, 350, 30);
+  rect(130, 380, 230, 30);
+  square(360, 350, 30);
+
+fill(61, 61, 61) //shirt
+   rect(0, 525, 600, 300);
+
+}</pre><center>
+</body>
+</html>
